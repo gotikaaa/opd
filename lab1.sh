@@ -80,21 +80,21 @@ echo "3.3"
 cat roggenrola2/gligar whimsicott4/mudkip > eevee4_33
 echo "3.4"
 ln exploud7 ninjask4/ferroseedexploud
-chmod 777 roggenrola2
-chmod 777 roggenrola2/scraggy
-chmod 777 exploud7
+chmod 700 roggenrola2
+chmod 700 roggenrola2/scraggy
+chmod 700 exploud7
 echo "3.5"
 cp exploud7 roggenrola2/scraggy
 chmod 763 roggenrola2/scraggy
 chmod 006 exploud7
-chmod 777 whimsicott4
-chmod 777 whimsicott4/poliwrath
+chmod 700 whimsicott4
+chmod 700 whimsicott4/poliwrath
 echo "3.6"
 cp -r roggenrola2 whimsicott4/poliwrath
 chmod 361 roggenrola2
 chmod 550 whimsicott4
 chmod 512 whimsicott4/poliwrath
-chmod 777 eevee4
+chmod 700 eevee4
 echo "3.7"
 cp eevee4 ninjask4/ferroseedeevee
 chmod 004 eevee4
@@ -117,19 +117,19 @@ cat ninjask4/elekid ninjask4/blitzle ninjask4/ferroseed | grep -i 'vo' 2> /tmp/l
 echo "4.6"
 ls -lR .  2>&1 | grep '^e' | sort -k 2 | tail -n 2
 echo "5.1"
-chmod 777 sealeo5
+chmod 700 sealeo5
 rm sealeo5
 echo "5.2"
-chmod 777 roggenrola2/gligar
+chmod 700 roggenrola2/gligar
 rm roggenrola2/gligar
 echo "5.3"
 ls -l Copy_* | grep '^l' | awk '{print $9}' | rm -f
 echo "5.4"
 rm -rf lab0/ninjask4/ferroseedexplo*
 echo "5.5"
-chmod -R 777 ninjask4
+chmod -R 700 ninjask4
 rm -rf ninjask4
 echo "5.6"
-chmod -R 777 whimsicott4
+chmod -R 700 whimsicott4
 rm -rf whimsicott4/poliwrath
 chmod 550 whimsicott4
