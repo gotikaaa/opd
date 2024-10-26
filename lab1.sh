@@ -51,7 +51,7 @@ Herbivore">whimsicott4/mudkip
 echo "Способности Sand-Attack Arm Thrust Vital Throw
 Fake Out Whirlwind Knock Off Smellingsalt Belly Drum Force Palm
 Seismic Toss Wake-Up Slap Endure Close Combat Reversal Heavy m">whimsicott4/hariyama
-chmod 004 eevee4
+chmod u=,g=,o=r eevee4
 chmod 006 exploud7
 chmod 363 ninjask4
 chmod 311 ninjask4/milotic
@@ -59,7 +59,7 @@ chmod 550 ninjask4/mareep
 chmod 004 ninjask4/elekid
 chmod 404 ninjask4/blitzle
 chmod 307 ninjask4/crawdaunt
-chmod 444 ninjask4/ferroseed
+chmod u=r,g=r,o=r ninjask4/ferroseed
 chmod 361 roggenrola2
 chmod 511 roggenrola2/serperior
 chmod 750 roggenrola2/chikorita
