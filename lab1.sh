@@ -105,7 +105,7 @@ wc -c ninjask4/elekid ninjask4/blitzle ninjask4/ferroseed roggenrola2/gligar whi
 echo "4.2"
 ls roggenrola2 2>/dev/null| sort
 echo "4.3"
-[ -d lab0 ] && cat -n $(ls -R lab0 | grep 'p$' | sort -r)
+cat -n $(ls -R . | grep 'p$' | sort -r)
 echo "4.4"
 cat -n ninjask4/elekid ninjask4/blitzle ninjask4/ferroseed roggenrola2/gligar whimsicott4/mudkip 2>&1 | grep -v 'm$'
 cd /tmp
