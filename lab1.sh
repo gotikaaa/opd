@@ -1,6 +1,6 @@
 #!/bin/bash
-until rm -rf lab0 2> /dev/null; do
-  chmod -R 777 lab0 2> /dev/null
+until rm -rf lab0 2>/dev/null; do
+  chmod -R 777 lab0 2>/dev/null
 done
 mkdir lab0
 cd lab0
@@ -75,7 +75,7 @@ chmod 440 whimsicott4/hariyama
 echo "3.1"
 ln -s ninjask4 Copy_14
 echo "3.2"
-ln -s exploud7 ninjask4/elekidexploud
+ln -s ../exploud7 ninjask4/elekidexploud
 echo "3.3"
 cat roggenrola2/gligar whimsicott4/mudkip > eevee4_33
 echo "3.4"
