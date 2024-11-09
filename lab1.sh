@@ -1,6 +1,6 @@
 #!/bin/bash
-until rm -rf find 'lab0 2> /dev/null 2> /dev/null'; do
-chmod -R777 lab0 2> /dev/null
+until rm -rf lab0 2> /dev/null; do
+  chmod -R 777 lab0 2> /dev/null
 done
 mkdir lab0
 cd lab0
@@ -108,10 +108,6 @@ echo "4.3"
 cat -n $(find . -type f -name '*p' | sort -r)
 echo "4.4"
 cat -n ninjask4/elekid ninjask4/blitzle ninjask4/ferroseed roggenrola2/gligar whimsicott4/mudkip 2>&1 | grep -v 'm$'
-cd /tmp
-touch lab0123
-cd 
-cd lab0
 echo "4.5"
 cat ninjask4/elekid ninjask4/blitzle ninjask4/ferroseed | grep -i 'vo' 2> /tmp/lab0123
 echo "4.6"
