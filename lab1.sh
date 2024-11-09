@@ -1,6 +1,6 @@
 #!/bin/bash
-until rm -rf `find lab0 2> /dev/null` 2> /dev/null; do
-chmod -R 777 lab0 2> /dev/null
+until rm -rf find 'lab0 2> /dev/null 2> /dev/null'; do
+chmod -R777 lab0 2> /dev/null
 done
 mkdir lab0
 cd lab0
@@ -105,7 +105,7 @@ wc -c ninjask4/elekid ninjask4/blitzle ninjask4/ferroseed roggenrola2/gligar whi
 echo "4.2"
 ls roggenrola2 2>/dev/null| sort
 echo "4.3"
-cat -n $(ls -R . | grep 'p$' | sort -r)
+cat -n $(find . -type f -name '*p' | sort -r)
 echo "4.4"
 cat -n ninjask4/elekid ninjask4/blitzle ninjask4/ferroseed roggenrola2/gligar whimsicott4/mudkip 2>&1 | grep -v 'm$'
 cd /tmp
@@ -123,13 +123,11 @@ echo "5.2"
 chmod 700 roggenrola2/gligar
 rm roggenrola2/gligar
 echo "5.3"
-ls -l Copy_* | grep '^l' | awk '{print $9}' | rm -f
+ls -l Copy_* | grep '^l'| rm -f
 echo "5.4"
 rm -rf lab0/ninjask4/ferroseedexplo*
 echo "5.5"
 chmod -R 700 ninjask4
 rm -rf ninjask4
 echo "5.6"
-chmod -R 700 whimsicott4
-rm -rf whimsicott4/poliwrath
 chmod 550 whimsicott4
