@@ -101,7 +101,7 @@ chmod 004 eevee4
 echo "Иерархия файлов"
 ls -lR
 echo "4.1"
-wc -c ninjask4/elekid ninjask4/blitzle ninjask4/ferroseed roggenrola2/gligar whimsicott4/mudkip 2>&1 | sort -n
+wc -m ninjask4/elekid ninjask4/blitzle ninjask4/ferroseed roggenrola2/gligar whimsicott4/mudkip 2>&1 | sort -n
 echo "4.2"
 ls roggenrola2 2>/dev/null| sort
 echo "4.3"
