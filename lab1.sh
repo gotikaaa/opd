@@ -98,14 +98,12 @@ chmod 700 eevee4
 echo "3.7"
 cp eevee4 ninjask4/ferroseedeevee
 chmod 004 eevee4
-echo "Иерархия файлов"
-ls -lR
 echo "4.1"
 wc -m ninjask4/elekid ninjask4/blitzle ninjask4/ferroseed roggenrola2/gligar whimsicott4/mudkip 2>&1 | sort -n
 echo "4.2"
 ls roggenrola2 2>/dev/null| sort
 echo "4.3"
-cat -n $(find . -type f -name '*p' | sort -r)
+find . -type f -name '*p' | sort -r | xargs cat -n
 echo "4.4"
 cat -n ninjask4/elekid ninjask4/blitzle ninjask4/ferroseed roggenrola2/gligar whimsicott4/mudkip 2>&1 | grep -v 'm$'
 echo "4.5"
